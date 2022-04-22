@@ -22,9 +22,9 @@ def p1(v_z):
       (np.pi*v_0**2)/(2*N_0)*(v_e + v_esc - v_z)/v_e*np.exp(-v_esc**2/v_0**2)) *\
      (v_esc - v_e < v_z < v_esc + v_e)
 
-omega = np.linspace(0,1.6e11)
-k     = np.linspace(0,6.925e5)
-m_chi = 1
+omega = np.linspace(0,1.6e15)
+k     = np.linspace(0,6.925e9)
+m_chi = 1e4
 
 np.seterr(divide='ignore', invalid='ignore')
 [K,W] = np.meshgrid(k,omega)
